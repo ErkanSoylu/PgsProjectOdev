@@ -1,0 +1,1038 @@
+[
+  {
+    "key": "keyboardDoneButton",
+    "iosValue" : "//XCUIElementTypeButton[@name='Cancel']",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "newBuildCancel",
+    "iosValue" : "//XCUIElementTypeButton[@name='Cancel']",
+    "iosType" : "xpath"
+  },
+
+  {
+    "key": "bookaflight",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/iv_book_a_flight",
+    "androidType": "id",
+    "iosValue" : "Book a Flight",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "portSearchTextInput",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_search",
+    "androidType": "id",
+    "iosValue" : "port_searchBar",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "portListItem",
+    "androidValue": "ln_airport",
+    "androidType": "id",
+    "iosValue" : "depPortItem1",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "selectBirthDateYearKEY",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout",
+    "androidType": "xpath"
+  },
+  {
+    "key": "selectBirthDateYear",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.Button",
+    "androidType": "xpath"
+  },
+  {
+    "key": "selectBirthDateYear2",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.Button[1]",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "oneWay",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tw_one_way",
+    "androidType": "id",
+    "iosValue" : "One Way",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "roundtrip",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tw_roundtrip",
+    "androidType": "id"
+  },
+
+  {
+    "key": "from",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/ln_from",
+    "androidType": "id",
+    "iosValue" : "From",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "to",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/ln_to",
+    "androidType": "id",
+    "iosValue" : "To",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "departure",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/ln_departure_date",
+    "androidType": "id",
+    "iosValue" : "Departure",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "datePageOKBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_ok",
+    "androidType": "id",
+    "iosValue" : "calendar_ok_button",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "passengerCount",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/rlt_passenger_counts",
+    "androidType": "id"
+  },
+
+  {
+    "key": "childPassengerCountPlus",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/iv_child_plus",
+    "androidType": "id"
+  },
+
+  {
+    "key": "infantPassengerCountPlus",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/iv_infant_plus",
+    "androidType": "id"
+  },
+
+  {
+    "key": "countAreaCloseOkBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_close",
+    "androidType": "id"
+  },
+
+  {
+    "key": "economy",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/rb_economy",
+    "androidType": "id",
+    "iosValue" : "Economy",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "bookNowBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_book_now",
+    "androidType": "id",
+    "iosValue" : "BOOK NOW",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "flightItem",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/rlt_flight",
+    "androidType": "id",
+    "iosValue" : "singleFlightItem1",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "bookingContinueBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_continue_booking",
+    "androidType": "id",
+    "iosValue" : "singleFlight_contiune_button",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "seatSelectionBtn",
+    "iosValue" : "CONTINUE",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "bookingMultiContinueBtn",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "multiFlight_contiune_button",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInfoMultiContinueBtn",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "passengerInfo_continue_button",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "flightSummaryMultiContinueBtn",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "flightSummary_continue_button",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "contactInfoMultiContinueBtn",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "contactInfo_continue_button",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "male",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/rb_male",
+    "androidType": "id",
+    "iosValue" : "Male",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "female",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/rb_female",
+    "androidType": "id"
+  },
+
+  {
+    "key": "title",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_passenger_title",
+    "androidType": "id",
+    "iosValue" : "passenger1_title_dropDownList",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "selectMR",
+    "androidValue": "//*[@text='Mr.']",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "selectMRS",
+    "androidValue": "//*[@text='Mrs.']",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "name",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_name",
+    "androidType": "id",
+    "iosValue" : "passenger1_name_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "surname",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_surname",
+    "androidType": "id",
+    "iosValue" : "passenger1_surname_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "dateOfBirth",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_passenger_birth_date",
+    "androidType": "id",
+    "iosValue" : "passenger1_dateOfBirth_datePicker",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "selectDatePopupOkBtn",
+    "androidValue": "android:id/button1",
+    "androidType": "id"
+  },
+  {
+    "key": "nationality",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_nationality",
+    "androidType": "id"
+  },
+
+  {
+    "key": "countrySearchTextInput",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/editText_search",
+    "androidType": "id"
+  },
+
+  {
+    "key": "countrySelectItem",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]",
+    "androidType": "xpath"
+  },
+  {
+    "key" : "passportInformation",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/edt_passenger_passport",
+    "androidType" : "id"
+  },
+
+  {
+    "key": "nationalIdNumberTextInput",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_national_id",
+    "androidType": "id"
+  },
+
+  {
+    "key": "contactPhone",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_contact_phone_number",
+    "androidType": "id",
+    "iosValue" : "contactInfo_mobileNo_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "contactEmail",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_email",
+    "androidType": "id",
+    "iosValue" : "contactInfo_email_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "passengerInfo",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/ln_passenger_info",
+    "androidType": "id"
+  },
+
+  {
+    "key": "cardHolderName",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_card_holder_name",
+    "androidType": "id",
+    "iosValue" : "payment_cardHolderName_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "cardNumber",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_card_number",
+    "androidType": "id",
+    "iosValue" : "payment_cardNumber_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "expireDate",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_card_expire_date",
+    "androidType": "id",
+    "iosValue" : "payment_expirationDate_datePicker",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "expireDateMonth",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/a.a.o.c0/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[1]",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "expireDateYear",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/a.a.o.c0/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "cardCCVNumber",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_card_ccv",
+    "androidType": "id",
+    "iosValue" : "payment_cvv_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "paymentAddress",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_address",
+    "androidType": "id",
+    "iosValue" : "payment_address_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "paymentCountry",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_country",
+    "androidType": "id"
+  },
+
+  {
+    "key": "paymentCity",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_city",
+    "androidType": "id",
+    "iosValue" : "payment_city_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "paymentPostalCode",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_postal_code",
+    "androidType": "id",
+    "iosValue" : "payment_postalCode_textBox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "acceptedCheckbox",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/chk",
+    "androidType": "id",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther",
+    "iosType" : "xpath"
+  },
+
+  {
+    "key": "buyTicket",
+    "iosValue" : "payment_BuyTicket_button",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "3dsecureSubmitButton",
+    "iosValue" : "Submit",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "pnr",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_pnr_code_copy",
+    "androidType": "id",
+    "iosValue" : "//*[contains(@value, 'PNR No:')]",
+    "iosType" : "xpath"
+  },
+
+  {
+    "key": "child",
+    "androidValue": "//*[@text='Child 1']",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "infant",
+    "androidValue": "//*[@text='Infant 1']",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "birthDateYearSelect",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.Button",
+    "androidType": "xpath"
+  },
+  {
+    "key": "birthDateYearSelect2",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "passportNumber",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_passport",
+    "androidType": "id"
+  },
+
+  {
+    "key": "issueCountry",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_passenger_issue_country",
+    "androidType": "id",
+    "iosValue" : "passenger1_issueCountry_textbox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "passportExpireDate",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_passenger_doc_expire_date",
+    "androidType": "id",
+    "iosValue" : "passenger1_expireDate_textbox",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "buyTicketBtn",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.Button",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "paymentSubmitBtn",
+    "androidValue": "//android.widget.Button[@content-desc=\"Submit\"]",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "checkinContinueOKBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_ok",
+    "androidType": "id",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeButton",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "checkinContinueOKBtn2",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeButton",
+    "iosType" : "xpath"
+  },
+
+  {
+    "key": "checkinPassengerItem",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/chk_passenger",
+    "androidType": "id"
+  },
+
+  {
+    "key": "onlineCheckinContinueBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_continue",
+    "androidType": "id",
+    "iosValue" : "CONTINUE",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "okBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_ok",
+    "androidType": "id",
+    "iosValue" : "OK",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "multiPassengerCheckinContinueBtn1",
+    "androidValue": ".//android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.Button",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "multiPassengerCheckinContinueBtn2",
+    "androidValue": ".//android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.Button",
+    "androidType": "xpath",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeButton",
+    "iosType" : "xpath"
+  },
+
+  {
+    "key": "multiPassengerCheckbox1",
+    "androidValue": ".//android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.CheckBox",
+    "androidType": "xpath"
+  },
+
+
+  {
+    "key": "multiPassengerCheckbox2",
+    "androidValue": ".//android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.CheckBox",
+    "androidType": "xpath"
+  },
+
+  {
+    "key": "multiPassengerCheckbox3",
+    "androidValue": ".//android.widget.FrameLayout[3]/android.widget.RelativeLayout/android.widget.CheckBox",
+    "androidType": "xpath"
+  },
+  {
+    "key": "PassengerOnlineCheckInCheckbox1",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeOther",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "PassengerOnlineCheckInCheckbox2",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "PassengerOnlineCheckInCheckbox3",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "PassengerOnlineCheckInCheckbox4",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "chkü",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "passwordNationality",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_passenger_nationality",
+    "androidType": "id"
+  },
+
+  {
+    "key": "passwordInformation",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_doc_id",
+    "androidType": "id"
+  },
+
+  {
+    "key": "issueCountryApisForm",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_issue_country",
+    "androidType": "id"
+  },
+  {
+    "key": "parkistanSelectFlag",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Pakistan",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerOneNationalityCountry",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "passenger1_nationality_dropDownList",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerOneNationalityId",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "passenger1_nationalityId_textbox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "childOneNationalityCountry",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "child1_nationality_dropDownList",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "childOneNationalityId",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "child1_nationalityId_textbox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "checkinInformationId",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTextField[5]",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "checkinContry",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTextField[4]",
+    "iosType" : "xpath"
+  },
+
+  {
+    "key": "InfantOneNationalityCountry",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "infant1_nationality_dropDownList",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "InfantOneNationalityId",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "infant1_nationalityId_textbox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "paymentCreditCardElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Credit Card",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "selectFlight",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout",
+    "androidType": "xpath",
+    "iosValue" : "singleFlightItem1",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "selectMultiFlight",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "multiFlightItem1",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "paymentCreditCardCountryElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "payment_country_textBox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "paymentCreditCardCountryFlagElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Pakistan",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerCountIncreasedElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Infant (0-2)",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerCountIncreasedInfantElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "infant_increase_button",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "passengerCountIncreasedChildElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "child_increase_button",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "pnrText",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_pnr_code_copy",
+    "androidType": "id",
+    "iosValue" : "ic copy",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "homePageBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_go_to_homepage",
+    "androidType": "id",
+    "iosValue" : "GO TO HOMEPAGE",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "checkinPageBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/iv_online_checkin",
+    "androidType": "id",
+    "iosValue" : "Online Check-in",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "checkinSurnameTxt",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/edt_surname",
+    "androidType": "id",
+    "iosValue" : "edt_surname",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "checkinPnrTxt",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.EditText[1]",
+    "androidType": "xpath",
+    "iosValue" : "edt_pnr_no",
+    "iosType" : "accessibilityid"
+  },
+
+  {
+    "key": "checkinSearchBtn",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/btn_search",
+    "androidType": "id",
+    "iosValue" : "SEARCH",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerCountIncreasedOKElement",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "OK",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationChild",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Child 1",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationChildName",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "child1_name_textBox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationChildSurname",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "child1_surname_textBox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationChildOneDate",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "child1_dateOfBirth_datePicker",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationInfant",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Infant 1",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationInfantName",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "infant1_name_textBox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationInfantSurname",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "infant1_surname_textBox",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "passengerInformationInfantOneDate",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "infant1_dateOfBirth_datePicker",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "selectReturnFlightDate",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Return",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "singleEmptyFlight",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "singleTv_empty_flight",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "multiEmptyFlight",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "multiTv_empty_flight",
+    "iosType" : "accessibilityid"
+  },
+  {
+    "key": "singleEmptyFlightSearch",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.TextView[3]",
+    "androidType": "xpath",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther/XCUIElementTypeStaticText[3]",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "contıuneButton",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton",
+    "iosType" : "xpath"
+  },
+  {
+    "key": "okButtonChangedPrice",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeAlert/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton",
+    "iosType" : "xpath"
+  },
+  {
+    "key" : "executiveEconomy",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/rb_executive_economy",
+    "androidType" : "id"
+  },
+  {
+    "key" : "multiCity",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/tw_multi_city",
+    "androidType" : "id"
+  },
+  {
+    "key" : "multiCityFrom",
+    "androidValue": "com.piac.thepiaapp.android.beta:id/tv_from",
+    "androidType" : "id"
+  },
+  {
+    "key" : "multiCityTo",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/tv_to",
+    "androidType" : "id"
+  },
+  {
+    "key" : "selectBusiness",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/rb_business",
+    "androidType": "id"
+  },
+  {
+    "key" : "selectMulticityFlight",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/rlt_flight",
+    "androidType" : "id"
+  },
+  {
+    "key" : "multiCityCalendar",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/tv_departure_date",
+    "androidType" : "id"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "key" : "manageBookingPnrText",
+  "androidValue" : "com.piac.thepiaapp.android.beta:id/edt_pnr_no",
+  "androidType" : "id"
+},
+
+{
+  "key" : "manageBookingBtn",
+  "androidValue" : "com.piac.thepiaapp.android.beta:id/rlt_manage_booking",
+  "androidType" : "id"
+},
+
+
+{
+  "key" : "agreementReservationText",
+  "androidValue" : "com.piac.thepiaapp.android.beta:id/chk",
+  "androidType" : "id"
+},
+{
+  "key" : "reservation",
+  "androidValue": "com.piac.thepiaapp.android.beta:id/tv_reservation_option",
+  "androidType" : "id"
+},
+  {
+    "key" : "selectBaggage5Kg",
+    "androidValue" : ".//*[@text='5KG']",
+    "androidType" : "xpath"
+  },
+
+{
+  "key" : "departurePrice",
+  "androidValue" : "com.piac.thepiaapp.android.beta:id/tv_total_price",
+  "androidType" : "id"
+},
+  {
+    "key" : "firstBaggage",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "selectBaggage",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/rlt_baggage",
+    "androidType" : "id"
+  },
+  {
+    "key" : "goToViewMyBooking",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/btn_go_to_view_my_booking",
+    "androidType" : "id"
+  },
+  {
+    "key" : "purchaseReservation",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.RelativeLayout",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "secondBaggage",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "selectBaggage30Kg",
+    "androidValue" : ".//*[@text='30KG']",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "selectTicket",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/recycler_view",
+    "androidType" : "id"
+  },
+  {
+    "key" : "a1",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[45]/android.widget.ImageView",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "a22",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[36]/android.widget.ImageView",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "selectParentBaggage",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "selectChildBaggage",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "selectTicketforFirstPassenger",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/a.a.o.c0/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.CheckBox",
+    "androidType" : "xpath"
+  },
+
+  {
+    "key" : "selectTicketforSecondPassenger",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/a.a.o.c0/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.CheckBox",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "a23",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[37]/android.widget.ImageView",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "ticketSelectOk",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/dialog_seat_select_btn_ok",
+    "androidType" : "id"
+  },
+  {
+    "key": "passengerInformationText",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Passenger Information",
+    "iosType" : "accessibilityid"
+  }
+]

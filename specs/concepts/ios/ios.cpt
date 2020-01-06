@@ -1,0 +1,239 @@
+Created by sahabt on 2019-06-18
+
+This is a concept file with following syntax for each concept.
+# Select book a flight ios
+ Check for New Build notification
+* Wait "10" seconds
+* Click element by "bookaflight"
+
+# Click book now button ios
+* Click element by "bookNowBtn"
+
+# Write <text> to <field> field ios
+* Wait "2" seconds if iOS
+* Find element by <field> and send keys <text>
+* Wait "2" seconds if iOS
+* Click Done button to close keyboard
+
+# Select credit card expire date ios
+* Click element by "expireDate"
+* Set credit card expiration month
+* Set credit card expiration year
+
+# Select passenger 1 nationality country flag ios
+* swipe et
+* Click element by "passengerOneNationalityCountry"
+* Wait "2" seconds
+* Click element by "parkistanSelectFlag"
+* Wait "2" seconds if iOS
+* swipe et
+
+# Select child 1 nationality country flag ios
+* Click element by "childOneNationalityCountry"
+* Wait "2" seconds
+* Click element by "parkistanSelectFlag"
+* Wait "2" seconds if iOS
+* swipe et
+
+# Select infant 1 nationality country flag ios
+* Click element by "InfantOneNationalityCountry"
+* Wait "2" seconds
+* Click element by "parkistanSelectFlag"
+* Wait "2" seconds if iOS
+* swipe et
+
+# Passenger 1 national id number: <nationalId> ios
+* Find element by "passengerOneNationalityId" and send keys <nationalId>
+* Click Done button to close keyboard
+
+# Child 1 national id number: <nationalId> ios
+* Find element by "childOneNationalityId" and send keys <nationalId>
+* Click Done button to close keyboard
+
+# National id number: <nationalId> ios
+* Find element by "InfantOneNationalityId" and send keys <nationalId>
+* Click Done button to close keyboard
+
+# Select flight ios
+* Click element by "selectFlight"
+
+# Select Multi flight ios
+* Click element by "selectMultiFlight"
+
+# Payment CreditCard Element Click
+* Click element by "paymentCreditCardElement"
+
+# Payment CreditCard Country Select ios
+* Click element by "paymentCreditCardCountryElement"
+* Wait "1" seconds if iOS
+* Click element by "paymentCreditCardCountryFlagElement"
+
+# Book a flight passenger count increased
+// 1 Adult, 1 CHD, 1 INF
+* Click element by "passengerCountIncreasedElement"
+* Click element by "passengerCountIncreasedChildElement"
+* Click element by "passengerCountIncreasedInfantElement"
+* Click element by "passengerCountIncreasedOKElement"
+
+# Passenger information child 1 name: <name> surname: <surname>
+* Click element by "passengerInformationChild"
+* Wait "1" seconds if iOS
+* Find element by "passengerInformationChildName" and send keys <name>
+* Wait "2" seconds if iOS
+* Click Done button to close keyboard
+* Find element by "passengerInformationChildSurname" and send keys <surname>
+* Wait "2" seconds if iOS
+* Click Done button to close keyboard
+
+# Passenger information infant 1 name: <name> surname: <surname>
+* Click element by "passengerInformationInfant"
+* Wait "1" seconds if iOS
+* Find element by "passengerInformationInfantName" and send keys <name>
+* Wait "2" seconds if iOS
+* Click Done button to close keyboard
+* Find element by "passengerInformationInfantSurname" and send keys <surname>
+* Wait "2" seconds if iOS
+* Click Done button to close keyboard
+
+# Select return flight date
+* Click element by "selectReturnFlightDate"
+* Wait "2" seconds
+* Select return flight
+* Click date ok button
+
+# INT> Country, national id number and issue country IOS
+* swipe et
+* Click element by "issueCountry"
+* Click element by "parkistanSelectFlag"
+* swipe et
+* swipe et
+* Wait "3" seconds
+* Select birhdate ios "passportExpireDate" day: "30" year: "2023"
+* swipe et
+
+# Select departure flight
+* Click departure
+* Wait "2" seconds
+* Date select flight
+* Click date ok button
+
+# Select departure flight datee
+* Click departure
+* Wait "2" seconds
+* Select return flight
+* Click date ok button
+
+# Select departure click and flight
+* Click departure
+* Wait "2" seconds
+* Select departure date
+* Click date ok button
+
+# Select departure and return flight
+* Click departure
+* Wait "2" seconds
+* Select departure and return date
+* Click date ok button
+
+# Select return flight datee
+* Click element by "selectReturnFlightDate"
+* Wait "2" seconds
+* Select return flight
+* Click date ok button
+
+# Click multi continue button
+* Click element by "bookingMultiContinueBtn"
+* Wait "5" seconds if iOS
+
+# Click passenger info multi continue button
+* Click element by "passengerInfoMultiContinueBtn"
+* Wait "5" seconds if iOS
+
+# Click contact info multi continue button
+* Click element by "contactInfoMultiContinueBtn"
+* Wait "5" seconds if iOS
+
+# Click contact info multi continue button 2
+* Click element by "contıuneButton"
+* Wait "5" seconds if iOS
+
+# Click flight summary multi continue button
+* Click element by "flightSummaryMultiContinueBtn"
+* Wait "5" seconds if iOS
+
+# Select departure and date flight
+* Click departure
+* Wait "5" seconds
+* Date select flight
+* Click date ok button
+
+# Select departure and date flight Dom_Dom
+* Click departure
+* Wait "5" seconds
+* Select return flight Dom_Dom
+* Click date ok button
+
+# Online Check-in
+* Pnr no copy and Checkin surname: "Sahin"
+
+# Online Check-in TEST
+* Pnr no copy and Checkin surname: "BBB" TEST "ZARBCM"
+
+# Select until the flight finds an empty job
+* Check for flights "singleEmptyFlight" "selectFlight" "singleEmptyFlightSearch"
+
+# Select until the multi flight finds an empty job
+* Check for flights "multiEmptyFlight" "selectMultiFlight" "singleEmptyFlightSearch"
+
+# Click title ıos
+* Click element by "title"
+* Wait "1" seconds
+* Click element by "title"
+
+# Seat Selection Continue Button 4
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "20" seconds
+* Click element by "contıuneButton"
+* Wait "30" seconds
+* Click element by "contıuneButton"
+
+# Seat Selection Continue Button 2
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "30" seconds
+* Click element by "contıuneButton"
+
+# Seat Selection Continue Button 6
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "20" seconds
+* Click element by "contıuneButton"
+* Wait "20" seconds
+* Click element by "contıuneButton"
+* Wait "30" seconds
+* Click element by "contıuneButton"
+
+# Seat Selection Continue Button 8
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "10" seconds
+* Click element by "contıuneButton"
+* Wait "20" seconds
+* Click element by "contıuneButton"
+* Wait "20" seconds
+* Click element by "contıuneButton"
+* Wait "20" seconds
+* Click element by "contıuneButton"
+* Wait "30" seconds
+* Click element by "contıuneButton"

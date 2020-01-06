@@ -1,0 +1,664 @@
+
+
+# Select book a flight
+* Click element by "bookaflight"
+
+# Select one way
+* Click element by "oneWay"
+
+# Select round trip
+* Click element by "roundtrip"
+
+# Select multicity
+* Click element by "multiCity"
+
+# Select from multicity <port> port
+* Click element by "multiCityFrom"
+* Wait "5" seconds
+* Find element by "portSearchTextInput" and send keys <port>
+* Click element by "portListItem"
+
+# Select to multicity <port> port
+* Wait "5" seconds
+* Find element by "portSearchTextInput" and send keys <port>
+* Click element by "portListItem"
+
+# Select from <port> port
+* Click element by "from"
+* Wait "5" seconds
+* Find element by "portSearchTextInput" and send keys <port>
+* Click element by "portListItem"
+
+
+# Select to <port> port
+* Wait "5" seconds
+* Find element by "portSearchTextInput" and send keys <port>
+* Click element by "portListItem"
+
+# Click departure
+* Click element by "departure"
+
+# Click multiCity departure
+* Click element by "multiCityCalendar"
+
+# Click date ok button
+* Click element by "datePageOKBtn"
+
+# Select economy
+* Click element by "economy"
+
+# Select selectBusiness
+* Click element by "selectBusiness"
+
+# Select executiveEconomy
+* Click element by "executiveEconomy"
+
+# Click book now button
+* Find element by "bookNowBtn"  swipe and click
+
+# Click continue button
+* Click element by "bookingContinueBtn"
+* Wait "5" seconds
+
+# Select male
+* Click element by "male"
+
+# Select female
+* Click element by "female"
+
+# Click title
+* Wait "1" seconds
+* Click element by "title"
+
+# Select mister title
+* Click element by "selectMR"
+
+# Select miss title
+* Click element by "selectMRS"
+
+# Write <text> to <field> field
+* Find element by <field> and send keys <text>
+
+# Select departure flight date
+* Click departure
+* Wait "5" seconds
+* Select departure date
+* Click date ok button
+
+# Select multicity departure flight date
+* Click multiCity departure
+* Wait "5" seconds
+* Select departure date
+* Click date ok button
+
+# Select departure and return flight date
+* Click departure
+* Select departure and return date
+* Click date ok button
+
+# Select multiCitydeparture and return flight date
+* Click multiCity departure
+* Select departure and return date
+* Click date ok button
+
+//# Select birhdate
+//* Click element by "dateOfBirth"
+//* Click element by "selectBirthDateYear"
+//* Click element by "selectBirthDateYear"
+//* Click element by "selectDatePopupOkBtn"
+//* Wait "5" seconds
+//* swipe et
+//* swipe et
+//* Wait "5" seconds
+
+//# Select child or infant birhdate
+//* Click element by "dateOfBirth"
+//* Click element by "birthDateYearSelect"
+//* Click element by "birthDateYearSelect2"
+//* Click element by "selectDatePopupOkBtn"
+//* Wait "3" seconds
+
+# DOM> Write country: <country> and national id number: <idnumber>
+* swipe et Two
+* Click nationality, write <country> and select that
+* swipe et Two
+* Write <idnumber> to "nationalIdNumberTextInput" field
+* swipe et
+
+# DOM> Write country : <country> , passport number: <passportN> and issue country: <issueCountry>
+* Click nationality, write <country> and select that
+* Wait "5" seconds
+* swipe et
+* swipe et
+* Find element by "passportNumber" and send keys <passportN>
+* swipe et
+* Click element by "issueCountry"
+* Write <issueCountry> to "countrySearchTextInput" field
+* Click element by "countrySelectItem"
+* swipe et
+* swipe et
+* Wait "3" seconds
+* Click element by "passportExpireDate"
+* Click element by "birthDateYearSelect"
+* Click element by "selectDatePopupOkBtn"
+* Wait "5" seconds
+* swipe et
+
+# INT> Write country : <country> , passport number: <passportN> and issue country: <issueCountry>
+* Click nationality, write <country> and select that
+* Wait "5" seconds
+* swipe et
+* swipe et
+* Find element by "passportNumber" and send keys <passportN>
+* swipe et
+* Click element by "issueCountry"
+* Write <issueCountry> to "countrySearchTextInput" field
+* Click element by "countrySelectItem"
+* swipe et
+* swipe et
+* Wait "3" seconds
+* Click element by "passportExpireDate"
+* Click element by "birthDateYearSelect"
+* Click element by "selectDatePopupOkBtn"
+* Wait "5" seconds
+* swipe et
+
+# Write contact phone: <phone> and email: <email>
+* Write <phone> to "contactPhone" field
+//* Click element by "contactPhone"
+//* Write contact phone with keyboard
+close keyboard          ---> Localde burası patlıyor ama testinium.io böyle çalışıyor.
+* Write <email> to "contactEmail" field
+
+# Click nationality, write <country> and select that
+* Wait "5" seconds
+* Click element by "nationality"
+* Write <country> to "countrySearchTextInput" field
+* Click element by "countrySelectItem"
+* Wait "5" seconds
+
+# Credit card; write name: <name> and write card number
+* Write <name> to "cardHolderName" field
+* Wait "5" seconds
+* Click element by "cardNumber"
+* write credit card number
+Write "4444333322221111" to "cardNumber" field
+
+# Credit card; write name: <name> and write card number Two
+* Write <name> to "cardHolderName" field
+* Wait "5" seconds
+* Click element by "cardNumber"
+* write credit card number Two
+Write "4444333322221111" to "cardNumber" field
+* swipe et Two
+
+# Credit card; select expire date
+* Click element by "expireDate"
+* Click element by "expireDateMonth"
+* Click element by "expireDateYear"
+* Click element by "selectDatePopupOkBtn"
+* Wait "5" seconds
+
+# Credit card; write ccv number: <ccv> and payment address: <address>
+* Wait "3" seconds
+* Find element by "cardCCVNumber" and send keys "358"
+Click element by "cardCCVNumber"
+Write ccv number
+* Wait "3" seconds
+close keyboard
+* swipe et Two
+* swipe et Two
+* Write <address> to "paymentAddress" field
+
+
+# Payment; write country: <country> , city: <city> and postal code: <postalcode>
+* Click element by "paymentCountry"
+* Write <country> to "countrySearchTextInput" field
+* Click element by "countrySelectItem"
+* Wait "5" seconds
+* swipe et
+* Write <city> to "paymentCity" field
+* Write <postalcode> to "paymentPostalCode" field
+
+# Rule accept checkbox clicked
+* Click element by "acceptedCheckbox"
+
+# Buy ticket clicked
+* Click element by "buyTicketBtn"
+* Wait "20" seconds
+
+# Submit clicked
+* 3d payment Submit button clicked
+* Wait "15" seconds
+
+# PNR displayed and test scenario done
+* "pnr" element is displayed
+
+# Child and infant passenger count increased
+* Click element by "passengerCount"
+* Click element by "childPassengerCountPlus"
+* Click element by "infantPassengerCountPlus"
+* Click element by "countAreaCloseOkBtn"
+
+# Select until the flight finds an empty job android 4
+* Check for flights android "NO FLIGHT" "selectFlight" "singleEmptyFlightSearch" "selectMulticityFlight"
+
+# Select until the flight finds an empty job android
+* Check for flights android "NO FLIGHT" "selectFlight" "singleEmptyFlightSearch"
+
+# Seat Selection Continue Button Android 2
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+
+# Seat Selection Continue Button Android 4
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+
+
+
+
+# Seat Selection Continue Button Android 6
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "20" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+
+# Seat Selection Continue Button Android 8
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+* Wait "30" seconds
+* Click element by "bookingContinueBtn"
+
+
+
+
+
+
+# 3 times swipe
+* swipe et
+* swipe et
+* swipe et
+
+# Click Checkin / Manage Booking search button
+* Click element by "checkinSearchBtn"
+
+# Click home page button
+* Click element by "homePageBtn"
+
+# Click go to view my booking
+* Click element by "goToViewMyBooking"
+
+# Click purchase Reservation
+* Click element by "purchaseReservation"
+
+# Click online checkin continue button
+* Click element by "onlineCheckinContinueBtn"
+* Wait "2" seconds
+
+# Select the reservation
+* Click element by "reservation"
+* Wait "2" seconds
+* Click element by "agreementReservationText"
+
+# Select the Baggage
+* Click element by "selectBaggage"
+* Wait "2" seconds 
+* Click element by "firstBaggage"
+
+# Select a1 seat and select 5 kg baggage
+* Click element by "a1"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "2" seconds
+* Click element by "selectBaggage"
+* Click element by "selectBaggage5Kg"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+# Select adult and child baggage
+* Click element by "firstBaggage"
+* Wait "20" seconds
+* Click element by "selectBaggage5Kg"
+* Click element by "secondBaggage"
+
+# Select adult and child baggage 5 kg
+* Click element by "selectParentBaggage"
+* Wait "20" seconds
+* Click element by "firstBaggage"
+* Wait "20" seconds
+* Click element by "selectChildBaggage"
+* Wait "20" seconds
+* Click element by "firstBaggage"
+* Wait "20" seconds
+* Click element by "bookingContinueBtn"
+* Wait "5" seconds
+
+# Select the first flight parent and child
+* Click element by "a22"
+* Wait "20" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "20" seconds
+* Click element by "a23"
+* Wait "20" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "20" seconds
+* Click element by "bookingContinueBtn"
+
+
+# RT _ Dom_Dom Seat Selection and Bag Selection Continue Button Android 8
+    Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+    Baggage Selection 1
+* Wait "10" seconds
+* Click element by "selectBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+    Ticket Selection 2
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+    Baggage Selection 2
+* Click element by "selectBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+    Return Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+        Baggage Selection 1
+* Wait "10" seconds
+* Click element by "selectBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+        Ticket Selection 2
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+        Baggage Selection 2
+* Click element by "selectBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+
+# 1 Ad - Seat Selection + Baggage Selection Continue Button Android 4
+Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+Ticket Selection 2
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+# OW - 1 AD - 1 INF - SEAT - BAG Selection
+Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "5" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "10" seconds
+Ticket Selection 2
+* Click element by "a23"
+* Wait "10" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectParentBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectChildBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+# RT - 1 AD - 1 INF - 2xSEAT - 2xBAG Selection
+Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "5" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "10" seconds
+Ticket Selection 2
+* Click element by "a23"
+* Wait "10" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+------------------Return---------------------------
+Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "5" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "10" seconds
+Ticket Selection 2
+* Click element by "a23"
+* Wait "10" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+----------------------------------------------------------------------
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectParentBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectChildBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+-----------------------Return--------------------------------------------
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectParentBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectChildBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+# RT - 1 AD - 1 INF - 2xSEAT
+Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "5" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "10" seconds
+Ticket Selection 2
+* Click element by "a23"
+* Wait "10" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+------------------Return---------------------------
+Ticket Selection 1
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "5" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "10" seconds
+Ticket Selection 2
+* Click element by "a23"
+* Wait "10" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+----------------------------------------------------------------------
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+
+# RT - DOM_DOM - 1 ADT - Seat - Xbag
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "a22"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+--------Baggage-------------------
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+
+
+# RT - 1 AD - 1 INF - 2xBaggage
+Ticket Selection 1
+
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+- Selecting Baggage -
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectParentBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectChildBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+- Return -
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectParentBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+Baggage Selection 2
+* Wait "10" seconds
+* Click element by "selectChildBaggage"
+* Wait "10" seconds
+* Click element by "firstBaggage"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+
+
+# RT , DOM + DOM , 1 ADT _ 1 CHD _ 2 Seat
+* Click element by "a22"
+* Wait "20" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "20" seconds
+* Click element by "ticketSelectOk"
+* Wait "10" seconds
+* Click element by "a23"
+* Wait "20" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "20" seconds
+* Click element by "ticketSelectOk"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+---------------------FirstDOM---------------------
+* Click element by "a22"
+* Wait "20" seconds
+* Click element by "selectTicketforFirstPassenger"
+* Wait "5" seconds
+* Click element by "ticketSelectOk"
+* Wait "20" seconds
+* Click element by "a23"
+* Wait "20" seconds
+* Click element by "selectTicketforSecondPassenger"
+* Wait "5" seconds
+* Click element by "ticketSelectOk"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+----------------SecondDom-------------------
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds
+* Click element by "bookingContinueBtn"
+* Wait "10" seconds

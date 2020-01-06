@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Send debug messages to System.out -->
+<configuration>
+<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+        <charset>UTF-8</charset>
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5p %c{1}:%L %M - %msg%n</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        <level>WARN</level>
+        <onMatch>DENY</onMatch>
+        <onMismatch>ACCEPT</onMismatch>
+    </filter>
+</appender>
+
+<logger name="log" level="INFO" additivity="false">
+<appender-ref ref="STDOUT" />
+</logger>
+
+        <!-- By default, the level of the root level is set to DEBUG -->
+<root level="DEBUG">
+<appender-ref ref="STDOUT" />
+</root>
+</configuration>
