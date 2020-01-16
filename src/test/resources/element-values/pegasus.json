@@ -1,0 +1,14 @@
+[
+  {
+    "key" : "ticketSelectOk",
+    "androidValue" : "com.piac.thepiaapp.android.beta:id/dialog_seat_select_btn_ok",
+    "androidType" : "id"
+  },
+  {
+    "key": "passengerInformationText",
+    "androidValue": "",
+    "androidType": "",
+    "iosValue" : "Passenger Information",
+    "iosType" : "accessibilityid"
+  }
+]
