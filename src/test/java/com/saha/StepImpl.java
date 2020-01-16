@@ -18,6 +18,7 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -40,6 +41,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nullable;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -47,6 +51,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.NoSuchElementException;
 import java.awt.*;
@@ -65,19 +70,12 @@ public class StepImpl {
     private DeviceInfo deviceInfo = new DeviceInfoImpl(DeviceType.ALL);
     private String model;
 
+
+
     @BeforeScenario
     public void beforeScenario() throws MalformedURLException {
         if (StringUtils.isEmpty(System.getenv("key"))) {
 
-//            try{
-//                Device venivididevici = deviceInfo.getFirstDevice();
-//                System.out.println(venivididevici.toString());
-//                System.out.println(venivididevici.getSerialNumber());
-//                System.out.println();
-//
-//            } catch (Exception e){
-//                Assert.fail("Device connection failed. \ne:\n" + e.toString());
-//            }
             if (localAndroid) {
                 logger.info("Local Browser");
                 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
@@ -85,8 +83,8 @@ public class StepImpl {
                         .setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
                 desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "android");
                 //desiredCapabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-                desiredCapabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.piac.thepiaapp.android.beta");
-                desiredCapabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.pia.ticketing.view.splash.SplashScreenActivity");
+                desiredCapabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.turkishairlines.mobile");
+                desiredCapabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.turkishairlines.mobile.ui.main.MainActivity");
                 desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
                 desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, true);
                 desiredCapabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
@@ -308,10 +306,69 @@ public class StepImpl {
 
         MobileElement _me = findElementByKey(key);
         _me.setValue(text);
-
         System.out.println("'" + text + "' written to '" + key + "' element.");
     }
+    @Step("Dataları excelden oku") public void parseTheDatasFromExcel(){
+        FileInputStream fis = null;
+        try {
+        fis = new FileInputStream("C:\\Users\\testinium\\Desktop\\PgsProjectOdev\\src\\test\\resources\\excel\\odevTHY.xlsx");
+        }catch (FileNotFoundException ex) {
+            System.out.println("Dosya bulunamadı.");
+        }
+        finally {
+            try {
+                if (fis != null) {
+                    fis.close();
+                }
+            } catch (IOException ex) {
+                System.out.println("Dosya kapatılırken bir hata oluştu.");
+            }
+        }
+    }
+    @Step("Check flight list")
+    public void checkTotalFlightList() {
+        List<MobileElement> allProducts= findElemenstByKey("ucusListeleme");
+      //  Random rand = new Random();
+        allProducts.size();
+       // int RandomProduct = rand.nextInt(allProducts.size());
+        System.out.println("Toplam Ürün Sayısı...:"+allProducts.size());
+        if (allProducts.size()>0) {
+            System.out.println("Uçuş Sayısı 0'dan fazladır devam ediliyor...");
+        }
+        else {
+            System.out.println("Uçuş listelenemedi sistemden çıkılıyor...");
+            appiumDriver.closeApp();
+        }
 
+    }
+    @Step("Select departure date")
+    public void selectDepDate() {
+
+        int dayToBeSelected = LocalDate.now().plusDays(3).getDayOfMonth();
+        int today = LocalDate.now().plusDays(0).getDayOfMonth();
+        System.out.println("Departure, day of month : " + dayToBeSelected);
+
+        if (appiumDriver instanceof AndroidDriver) {
+
+            if (today >= 31) {
+
+                waitBySecond(3);
+                swipeMethod();
+                waitBySecond(3);
+                swipeMethod();
+                waitBySecond(3);
+                swipeMethod();
+                waitBySecond(3);
+                swipeMethod(); //   ---> Localde burası 3 adet swipeMethod yeterli ama testinium.io 4 tane olması gerekiyor.
+                waitBySecond(5);
+
+                findElement(By.xpath("//*[@text='" + dayToBeSelected + "']")).click();
+            } else {
+
+                findElement(By.xpath("//*[@text='" + dayToBeSelected + "']")).click();
+            }
+        }
+    }
     @Step({"Find element by <key> and send keys <text> email"})
     public void searhAirportInputsendKeysByKeyNotClearEmail(String key, String text) {
 
@@ -927,72 +984,6 @@ public class StepImpl {
 //                }
 //            }
             clickByKey("flightItem");
-        }
-    }
-
-    @Step("Select departure date")
-    public void selectDepDate() {
-
-        int dayToBeSelected = LocalDate.now().plusDays(1).getDayOfMonth();
-        int today = LocalDate.now().plusDays(0).getDayOfMonth();
-        System.out.println("Departure, day of month : " + dayToBeSelected);
-
-        if (appiumDriver instanceof AndroidDriver){
-
-            if( today >= 31) {
-
-                waitBySecond(3);
-                swipeMethod();
-                waitBySecond(3);
-                swipeMethod();
-                waitBySecond(3);
-                swipeMethod();
-                waitBySecond(3);
-                swipeMethod(); //   ---> Localde burası 3 adet swipeMethod yeterli ama testinium.io 4 tane olması gerekiyor.
-                waitBySecond(5);
-
-                findElement(By.xpath("//*[@text='" + dayToBeSelected + "']")).click();
-            }
-            else {
-
-                findElement(By.xpath("//*[@text='" + dayToBeSelected + "']")).click();
-            }
-
-        }
-        else if (appiumDriver instanceof IOSDriver) {
-
-            /*
-            int upperMonthHeader = findElement(By.xpath(".//XCUIElementTypeCollectionView/XCUIElementTypeOther[1]"))
-                                    .getCoordinates().onPage().getY();
-
-            int lowerMonthHeader = findElement(By.xpath(".//XCUIElementTypeCollectionView/XCUIElementTypeOther[2]"))
-                                    .getCoordinates().onPage().getY();
-
-             */
-            //hızlanması için yukarıdaki işlemler bypass eldildi (başka telefonlarda denerken buranın düzeltilmesi lazım, şimdilik 40sn tasarruf için var)
-            int upperMonthHeader = 111;
-            int lowerMonthHeader = 433;
-            System.out.println("upper month header: " + upperMonthHeader);
-            System.out.println("lower month header: " + lowerMonthHeader);
-            int deviceMiddleX = getScreenWidth() / 2;
-            swipeMethod(deviceMiddleX, lowerMonthHeader, deviceMiddleX, upperMonthHeader);
-
-            int firstDateValue = Integer.parseInt(findElement(By.xpath(".//XCUIElementTypeCollectionView/XCUIElementTypeOther[1]/following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText")).getAttribute("value"));
-            if (firstDateValue == 1) {
-
-                findElement(By.xpath("//XCUIElementTypeStaticText[@name='" + dayToBeSelected + "']")).click();
-            }
-            else if (firstDateValue > 1) {
-                if (dayToBeSelected >= firstDateValue)
-
-                    findElement(By.xpath("(.//XCUIElementTypeCollectionView/XCUIElementTypeOther[1]/following-sibling::*//XCUIElementTypeStaticText[@name='" + dayToBeSelected + "'])[2]")).click();
-                else
-
-                    findElement(By.xpath(".//XCUIElementTypeCollectionView/XCUIElementTypeOther[1]/following-sibling::*//XCUIElementTypeStaticText[@name='" + dayToBeSelected + "']")).click();
-            }
-
-            System.out.println();
-            //findElement(By.xpath("//XCUIElementTypeStaticText[@name='" + plusTwoDays.getDayOfMonth() + "']")).click();
         }
     }
 

@@ -5,10 +5,292 @@
     "androidType" : "id"
   },
   {
-    "key": "passengerInformationText",
-    "androidValue": "",
-    "androidType": "",
-    "iosValue" : "Passenger Information",
-    "iosType" : "accessibilityid"
+    "key" : "biletAl",
+    "androidValue" : "com.turkishairlines.mobile:id/acMain_btnBooking",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "nereye",
+    "androidValue" : "com.turkishairlines.mobile:id/frDashboard_tvToCode",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "havalimaniYaz",
+    "androidValue" : "com.turkishairlines.mobile:id/frAirportSelection_etSearch",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "tekYon",
+    "androidValue" : "com.turkishairlines.mobile:id/frDashboard_tvOneWay",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "ucusAra",
+    "androidValue" : "com.turkishairlines.mobile:id/frDashboard_btnSearch",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "ucusListeleme",
+    "androidValue" : "com.turkishairlines.mobile:id/frFlightSearch_rvFlight",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "adi",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddNewPassenger_etAddName",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "cinsiyetBay",
+    "androidValue" : "com.turkishairlines.mobile:id/form_checkbox_left",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "cinsiyetBayan",
+    "androidValue" : "com.turkishairlines.mobile:id/form_checkbox_right",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "dogumTarihi",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddNewPassenger_etAddDateOfBirth",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "eposta",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddNewPassenger_etAddEmail",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType": ""
+  },
+  {
+    "key" : "tc",
+    "androidValue": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.CheckBox[1]",
+    "androidType" : "xpath",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "addFirstPassenger",
+    "androidValue" : "com.turkishairlines.mobile:id/frPickPassengerlistitemadd_tvShortName",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "bilgilerimiKaydet",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddNewPassenger_btnAddPassenger",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType": ""
+  },
+  {
+    "key" : "ikinciYolcuSec",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.ExpandableListView/android.widget.RelativeLayout[3]/android.widget.RelativeLayout",
+    "androidType" : "xpath",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "continueButtonContact",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddContactInfo_btnContinue",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "YolcuDevamEt",
+    "androidValue" : "com.turkishairlines.mobile:id/frPickPassenger_btnContinue",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "koltukSec",
+    "androidValue" : "com.turkishairlines.mobile:id/frPassengerSelection_btnContinue",
+    "androidType" : "id"
+  },
+  {
+    "key" : "koltukOnayla",
+    "androidValue" : "com.turkishairlines.mobile:id/dgSeatPrice_cbCheck",
+    "androidType" : "id"
+  },
+  {
+    "key" : "ekHizmetDevam",
+    "androidValue" : "com.turkishairlines.mobile:id/frAdditionalServices_btnContinue",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "hesapOzetiDevam",
+    "androidValue" : "com.turkishairlines.mobile:id/layoutGenericBottom_btnContinue",
+    "androidType" : "id"
+  },
+  {
+    "key" : "krediKartiNumarasi",
+    "androidValue" : "com.turkishairlines.mobile:id/frNewCreditCard_etAddCardNumber",
+    "androidType" : "id"
+  },
+  {
+    "key" : "krediKartiSec",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[2]",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "krediKartiSKT",
+    "androidValue": "com.turkishairlines.mobile:id/frNewCreditCard_etExpiryDate",
+    "androidType" : "id"
+  },
+  {
+    "key" : "krediKartiOnayla",
+    "androidValue" : "com.turkishairlines.mobile:id/layoutCustomSpinner_imOk",
+    "androidType" : "id"
+  },
+  {
+    "key" : "ucusDevam",
+    "androidValue" : "com.turkishairlines.mobile:id/frFlightSelection_btnContinue",
+    "androidType" : "id"
+  },
+  {
+    "key" : "koltukSecimDevam",
+    "androidValue" : "com.turkishairlines.mobile:id/frDomesticSeatSelection_btnContinue",
+    "androidType" : "id"
+  },
+  {
+    "key" : "koltukEkrani",
+    "androidValue" : "com.turkishairlines.mobile:id/frDomesticSeatSelection_rvSeats",
+    "androidType" : "id"
+  },
+  {
+    "key" : "koltukUcusuSec",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[2]",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "ilkYolcu",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.CheckBox",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "ikinciYolcu",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.RelativeLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.CheckBox",
+    "androidType" : "xpath"
+  },
+  {
+    "key" : "ekKoltuk",
+    "androidValue" : "com.turkishairlines.mobile:id/frAdditionalServices_cbExitSeat",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "numaraAlani",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddContactInfo_etPhoneNumber",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "tr90",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "ulkeKodusec",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddContactInfo_etCountryCode",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "ikinciYolcuEkle",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.ExpandableListView/android.widget.RelativeLayout[4]/android.widget.RelativeLayout",
+    "androidType" : "xpath",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "tcKimlikAlani",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddNewPassenger_etAddTCKN",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "soyadi",
+    "androidValue" : "com.turkishairlines.mobile:id/frAddNewPassenger_etAddLastName",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "devamButonu",
+    "androidValue" : "com.turkishairlines.mobile:id/frFlightSearch_btnContinue",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "firstFlight",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView[2]/android.view.ViewGroup[1]",
+    "androidType" : "xpath",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "addOnePassenger",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout[7]/android.widget.TextView",
+    "androidType" : "xpath",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "takvimiKapat",
+    "androidValue" : "com.turkishairlines.mobile:id/frDashboard_btnDone",
+    "androidType" : "id",
+    "iosValue": "",
+    "iosType" : ""
+  },
+  {
+    "key" : "takvimeTikla",
+    "androidValue" : "com.turkishairlines.mobile:id/dateWidget_tvDateDay",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "ucusuSec",
+    "androidValue" : "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[2]",
+    "androidType" : "xpath",
+    "iosValue" : "",
+    "iosType" : ""
+  },
+  {
+    "key" : "nereden",
+    "androidValue" : "com.turkishairlines.mobile:id/frDashboard_llFrom",
+    "androidType" : "id",
+    "iosValue" : "",
+    "iosType" : ""
   }
 ]
