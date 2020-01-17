@@ -1,0 +1,39 @@
+Created by testinium on 16.01.2020
+
+This is a concept file with following syntax for each concept.
+
+# Select and write the from road
+* Click element by "nereden"
+* Wait "2" seconds
+ Dataları excelden okuma gelecek
+* "havalimaniYaz" "1" dan girilir
+Find element by "havalimaniYaz" and send keys "SAW"
+* Wait "5" seconds
+* Click element by "ucusuSec"
+* Wait "5" seconds
+
+# Select and write to to road
+* Click element by "nereye"
+* Wait "2" seconds
+ Dataları excelden okuma gelecek
+ * Find element by "havalimaniYaz" and send keys "ESB"
+* Wait "5" seconds
+* Click element by "ucusuSec"
+* Wait "5" seconds
+
+# Select departure flight date
+* Click element by "takvimeTikla"
+* Wait "2" seconds
+* Select departure date
+
+# Yetişkin Bilgisini arttir
+* Click element by "addOnePassenger"
+
+# Check flight list and count
+* Wait "5" seconds
+* Check flight list
+
+# Select economy flight
+* Wait "5" seconds
+* Find element text equals "EcoFly" and click
+
