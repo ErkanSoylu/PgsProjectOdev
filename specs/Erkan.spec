@@ -11,32 +11,32 @@ ErkanTest
 * Login Kontrolü
 * Click element by "biletAl"
 * Click element by "tekYon"
-* Select and write the from road
-* Select and write to to road
-* Select departure flight date
-* Click element by "takvimiKapat"
+* Gidiş yönü bilgilerini yazdır
+* Nereye gidileceği bilgilerini yazdır
+* Uçuş tarihini seç
+* Elemente tikla "takvimiKapat"
 * Yetişkin Bilgisini arttir
-* Click element by "ucusAra"
-* Check flight list and count
-* Click element by "firstFlight"
-* Select economy flight
-* Click element by "devamButonu"
+* Elemente tikla "ucusAra"
+* Uçuş listelendiğini kontrol et
+* Elemente tikla "firstFlight"
+* Ekonomi uçuşunu seç
+* Elemente tikla "devamButonu"
 * Mevcut kişi sayısını kontrol et
-* Click element by "addFirstPassenger"
-* Add First Passenger
-* Click element by "yolcuPencereKapat"
-* Click element by "ikinciYetiskin"
-* Click element by "addFirstPassenger"
-* Add Second Passenger
-* Click element by "YolcuDevamEt"
-* Click element by "ulkeKodusec"
-* Click element by "tr90"
+* Elemente tikla "addFirstPassenger"
+* Ilk yolcuyu ekle
+* Elemente tikla "yolcuPencereKapat"
+* Elemente tikla "ikinciYetiskin"
+* Elemente tikla "addFirstPassenger"
+* Ikinci yolcuyu ekle
+* Elemente tikla "YolcuDevamEt"
+* Elemente tikla "ulkeKodusec"
+* Elemente tikla "tr90"
 * Find element by "numaraAlani" and send keys "5458814686"
 * Find element text equals "Devam" and click
-* Click element by "ekKoltuk"
+* Elemente tikla "ekKoltuk"
 * Koltuk seçimi ilk yolcu gidiş
 * Koltuk seçimi ikinci yolcu gidiş
-* Click element by "hesapOzetiDevam"
-* Click element by "hesapOzetiDevam"
-* Click element by "hesapOzetiDevam"
-* Payment Page
+* Elemente tikla "hesapOzetiDevam"
+* Elemente tikla "hesapOzetiDevam"
+* Elemente tikla "hesapOzetiDevam"
+* Ödeme sayfasi

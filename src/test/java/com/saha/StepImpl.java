@@ -291,7 +291,7 @@ public class StepImpl {
         }
     }
 
-    @Step({"Click element by <key>"})
+    @Step({"Click element by <key>" , "Elemente tikla <key>"})
     public void clickByKey(String key) throws InterruptedException {
         findElementByKey(key).click();
         System.out.println("'" + key + "' element clicked");

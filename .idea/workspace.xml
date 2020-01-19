@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f69e5622-ddc1-42dc-8bab-1b8c2b9d9997" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample-appium-gauge-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Thy-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specs/Erkan.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/Erkan.spec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specs/Odev.cpt" beforeDir="false" afterPath="$PROJECT_DIR$/specs/Odev.cpt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/saha/StepImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saha/StepImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/element-values/pegasus.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/element-values/thy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/excel/odevTHY.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/excel/odevTHY.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,22 +226,30 @@
       <option name="project" value="LOCAL" />
       <updated>1579263249948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="senaryo tamamlanmış hali">
+      <created>1579427387281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579427387281</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="without Excel and Random Select seat" />
-    <option name="LAST_COMMIT_MESSAGE" value="without Excel and Random Select seat" />
+    <MESSAGE value="senaryo tamamlanmış hali" />
+    <option name="LAST_COMMIT_MESSAGE" value="senaryo tamamlanmış hali" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Notifications" timestamp="1579244431292">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1579244431292" />
-    <state x="254" y="0" key="CommitChangelistDialog2" timestamp="1579263249041">
+    <state x="254" y="0" key="CommitChangelistDialog2" timestamp="1579427386217">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="254" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1579263249041" />
+    <state x="254" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1579427386217" />
     <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1579244546493">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -270,10 +274,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1579190260639" />
-    <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1579263258214">
+    <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1579427396403">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1579263258214" />
+    <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1579427396403" />
     <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579244471765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

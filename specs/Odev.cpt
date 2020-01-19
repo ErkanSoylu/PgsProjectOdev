@@ -7,7 +7,7 @@ This is a concept file with following syntax for each concept.
 * Wait "5" seconds
 * Click element by "cerezKabul" if exist
 
-# Select and write the from road
+# Gidiş yönü bilgilerini yazdır
 * Click element by "nereden"
 * Wait "2" seconds
  Dataları excelden okuma gelecek
@@ -16,7 +16,7 @@ This is a concept file with following syntax for each concept.
 * Click element by "ucusuSec"
 * Wait "5" seconds
 
-# Add First Passenger
+# Ilk yolcuyu ekle
 *  "adi" Alanına : "1" numaralı sheet'den "0" satırından , "0" kolonundandan bilgi girilir.
 * Wait "1" seconds
 *  "soyadi" Alanına : "1" numaralı sheet'den "0" satırından , "1" kolonundandan bilgi girilir.
@@ -39,7 +39,7 @@ This is a concept file with following syntax for each concept.
 * Wait "1" seconds
 * Click element by "bilgilerimiKaydet"
 
-# Add Second Passenger
+# Ikinci yolcuyu ekle
 *  "adi" Alanına : "1" numaralı sheet'den "1" satırından , "0" kolonundandan bilgi girilir.
 * Wait "1" seconds
 *  "soyadi" Alanına : "1" numaralı sheet'den "1" satırından , "1" kolonundandan bilgi girilir.
@@ -63,7 +63,7 @@ This is a concept file with following syntax for each concept.
 * Find element text equals "Kaydet" and click
 
 
-# Select and write to to road
+# Nereye gidileceği bilgilerini yazdır
 * Click element by "nereye"
 * Wait "2" seconds
  Dataları excelden okuma gelecek
@@ -72,7 +72,7 @@ This is a concept file with following syntax for each concept.
 * Click element by "ucusuSec"
 * Wait "5" seconds
 
-# Select departure flight date
+# Uçuş tarihini seç
 * Click element by "takvimeTikla"
 * Wait "2" seconds
 * Select departure date
@@ -80,15 +80,15 @@ This is a concept file with following syntax for each concept.
 # Yetişkin Bilgisini arttir
 * Click element by "addOnePassenger"
 
-# Check flight list and count
+# Uçuş listelendiğini kontrol et
 * Wait "5" seconds
 * Check flight list
 
-# Select economy flight
+# Ekonomi uçuşunu seç
 * Wait "5" seconds
 * Find element text equals "EcoFly" and click
 
-# Payment Page
+# Ödeme sayfasi
 * Click element by "krediKartiSec"
 * Find element by "krediKartiNumarasi" and send keys "1111222233334444"
 * Click element by "krediKartiSKT"
