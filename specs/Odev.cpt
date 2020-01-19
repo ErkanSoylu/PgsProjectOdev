@@ -2,21 +2,72 @@ Created by testinium on 16.01.2020
 
 This is a concept file with following syntax for each concept.
 
+# Login Kontrolü
+* Click element by "konumİzin" if exist
+* Wait "5" seconds
+* Click element by "cerezKabul" if exist
+
 # Select and write the from road
 * Click element by "nereden"
 * Wait "2" seconds
  Dataları excelden okuma gelecek
-* "havalimaniYaz" "1" dan girilir
-Find element by "havalimaniYaz" and send keys "SAW"
+*  "havalimaniYaz" Alanına : "0" numaralı sheet'den "0" satırından , "0" kolonundandan bilgi girilir.
 * Wait "5" seconds
 * Click element by "ucusuSec"
 * Wait "5" seconds
+
+# Add First Passenger
+*  "adi" Alanına : "1" numaralı sheet'den "0" satırından , "0" kolonundandan bilgi girilir.
+* Wait "1" seconds
+*  "soyadi" Alanına : "1" numaralı sheet'den "0" satırından , "1" kolonundandan bilgi girilir.
+* Wait "2" seconds
+* Click element by "cinsiyetBay"
+* Wait "1" seconds
+* Click element by "dogumTarihiAlani"
+* Wait "1" seconds
+* Click element by "dogumTarihiOnay"
+* Wait "1" seconds
+*  "eposta" Alanına : "1" numaralı sheet'den "0" satırından , "2" kolonundandan bilgi girilir.
+* Wait "1" seconds
+* swipe et
+* Wait "2" seconds
+* swipe et
+* Wait "1" seconds
+* Click element by "tc"
+* Wait "1" seconds
+*  "tcKimlikAlani" Alanına : "1" numaralı sheet'den "0" satırından , "3" kolonundandan bilgi girilir.
+* Wait "1" seconds
+* Click element by "bilgilerimiKaydet"
+
+# Add Second Passenger
+*  "adi" Alanına : "1" numaralı sheet'den "1" satırından , "0" kolonundandan bilgi girilir.
+* Wait "1" seconds
+*  "soyadi" Alanına : "1" numaralı sheet'den "1" satırından , "1" kolonundandan bilgi girilir.
+* Wait "2" seconds
+* Click element by "cinsiyetBay"
+* Wait "1" seconds
+* Click element by "dogumTarihiAlani"
+* Wait "1" seconds
+* Click element by "dogumTarihiOnay"
+* Wait "1" seconds
+*  "eposta" Alanına : "1" numaralı sheet'den "1" satırından , "2" kolonundandan bilgi girilir.
+* Wait "1" seconds
+* swipe et
+* Wait "2" seconds
+* swipe et
+* Wait "1" seconds
+* Click element by "tc"
+* Wait "1" seconds
+*  "tcKimlikAlani" Alanına : "1" numaralı sheet'den "1" satırından , "3" kolonundandan bilgi girilir.
+* Wait "1" seconds
+* Find element text equals "Kaydet" and click
+
 
 # Select and write to to road
 * Click element by "nereye"
 * Wait "2" seconds
  Dataları excelden okuma gelecek
- * Find element by "havalimaniYaz" and send keys "ESB"
+*  "havalimaniYaz" Alanına : "0" numaralı sheet'den "0" satırından , "1" kolonundandan bilgi girilir.
 * Wait "5" seconds
 * Click element by "ucusuSec"
 * Wait "5" seconds
@@ -37,3 +88,44 @@ Find element by "havalimaniYaz" and send keys "SAW"
 * Wait "5" seconds
 * Find element text equals "EcoFly" and click
 
+# Payment Page
+* Click element by "krediKartiSec"
+* Find element by "krediKartiNumarasi" and send keys "1111222233334444"
+* Click element by "krediKartiSKT"
+* Click element by "krediKartiOnayla"
+
+
+# Koltuk seçimi ilk yolcu gidiş
+* Click element by "ilkUcusKoltuk"
+* Click element by "ilkYolcu"
+* Click element by "koltukSec"
+* Wait "10" seconds
+* "koltuk" işlemi rastgele seçilir
+* Wait "2" seconds
+* Click element by "koltukOnayla"
+* Wait "2" seconds
+* Click element by "koltukSecimDevam"
+
+# Koltuk seçimi ikinci yolcu gidiş
+* Click element by "ilkUcusKoltuk"
+* Click element by "ikinciYolcu"
+* Click element by "koltukSec"
+* "koltuk" işlemi rastgele seçilir
+* Click element by "koltukOnayla"
+* Click element by "koltukSecimDevam"
+
+# Koltuk seçimi ilk yolcu geliş
+* Click element by "ikinciUcusKoltuk"
+* Click element by "ilkYolcu"
+* Click element by "koltukSec"
+* "koltuk" işlemi rastgele seçilir
+* Click element by "koltukOnayla"
+* Click element by "koltukSecimDevam"
+
+# Koltuk seçimi ikinci yolcu geliş
+* Click element by "ikinciUcusKoltuk"
+* Click element by "ikinciYolcu"
+* Click element by "koltukSec"
+* "koltuk" işlemi rastgele seçilir
+* Click element by "koltukOnayla"
+* Click element by "koltukSecimDevam"

@@ -52,6 +52,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.NoSuchElementException;
 
@@ -176,6 +177,14 @@ public class StepImpl {
     public MobileElement findElement(By by) {
         return appiumDriver.findElement(by);
     }
+    private boolean isElementPresent(By by) {
+        try {
+            appiumDriver.findElement(by);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
     public void waitUntilElementIsVisible(String key) {
         By elementBy = selector.getSelectorInfo(key).getBy();
         appiumFluentWait.until(ExpectedConditions.visibilityOfElementLocated(elementBy));
@@ -214,19 +223,79 @@ public class StepImpl {
         model = shellCommand("getprop", "ro.product.model").toString();
     }
 
-    @Step({"Click element by <key>"})
-    public void clickByKey(String key) {
-        findElementByKey(key).click();
-        System.out.println("'" + key + "' element clicked");
+    @Step("<key> işlemi rastgele seçilir ")
+    public void selectSeat(String key) {
+        List<MobileElement> elements = findElemenstByKey(key);
+        List koltukListeis = new ArrayList();
+        int turSayisi = 0;
+        while (turSayisi < 2) {
+            turSayisi = turSayisi + 1;
+            int i = 0;
+            for (i = 0; i < elements.size(); i++) {
+                String ucusMusait = elements.get(i).getAttribute("clickable");
+                if (ucusMusait.equals("true")) {
+                    koltukListeis.add(i);
+                } else if (ucusMusait.equals("false")) {
+                }
+            }
+            if (koltukListeis.size() == 0) {
+                swipeDownAccordingToPhoneSize();
+                i = 0;
+            }
+        }
+        Random random = new Random();
+        int toplamSayi = random.nextInt(koltukListeis.size());
+        elements.get((Integer) koltukListeis.get(toplamSayi)).click();
+
+    }
+    @Step("Mevcut kişi sayısını kontrol et")
+    public void controlTheBasketCount() throws InterruptedException {
+        Thread.sleep(5000);
+        boolean test = isElementPresent(By.id("com.turkishairlines.mobile:id/frPickPassengerlistitem_tvEdit"));
+        if (test == true) {
+            System.out.println("Sepette ürünler mevcut , ürün adedine göre sırasıyla silme işlemi gerçekleştirilecek.");
+            List<MobileElement> allProducts = findElemenstByKey("duzenleButonu");
+            for(int i=allProducts.size(); i>0; i--){
+                Thread.sleep(5000);
+                clickByKey("duzenleButonu");
+                System.out.println("Mevcut kişi listesine girildi. ...");
+                Thread.sleep(2000);
+                clickByKey("kisiSilme");
+                System.out.println("Listeden kişi silindi...");
+                Thread.sleep(2000);
+            }
+
+            Thread.sleep(5000);
+            System.out.println("Mevcut kişi listesi olmadığı için devam ediliyor...");
+            Thread.sleep(5000);
+
+        }
+        else {
+            System.out.println("Mevcut kişi listesi olmadığı için devam ediliyor...");
+            Thread.sleep(5000);
+
+        }
+    }
+    @Step({"Click element by <key> if exist"})
+    public void existClickByKey(String key) {
+
+        MobileElement element = null;
+        try {
+            element = findElementByKey(key);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (element != null) {
+            element.click();
+        }
     }
 
-    @Step({"<key> li elementi bul, temizle ve <text> değerini yaz",
-            "Find element by <key> clear and send keys <text>"})
-    public void sendKeysByKey(String key, String text) {
-
-        MobileElement webElement = findElementByKey(key);
-        webElement.clear();
-        webElement.setValue(text);
+    @Step({"Click element by <key>"})
+    public void clickByKey(String key) throws InterruptedException {
+        findElementByKey(key).click();
+        System.out.println("'" + key + "' element clicked");
+        Thread.sleep(2000);
     }
 
     @Step("Find element by <key> and send keys <text> to input")
@@ -248,7 +317,7 @@ public class StepImpl {
     public void checkTotalFlightList() {
         List<MobileElement> allProducts= findElemenstByKey("ucusListeleme");
         allProducts.size();
-        System.out.println("Toplam Ürün Sayısı...:"+allProducts.size());
+        System.out.println("Uçuş sayısı kontrol ediliyor...:"+allProducts.size());
         if (allProducts.size()>0) {
             System.out.println("Uçuş Sayısı 0'dan fazladır devam ediliyor...");
         }
@@ -260,8 +329,7 @@ public class StepImpl {
     }
     @Step("Select departure date")
     public void selectDepDate() {
-
-        int dayToBeSelected = LocalDate.now().plusDays(3).getDayOfMonth();
+        int dayToBeSelected = LocalDate.now().plusDays(2).getDayOfMonth();
         int today = LocalDate.now().plusDays(0).getDayOfMonth();
         System.out.println("Departure, day of month : " + dayToBeSelected);
 
@@ -276,7 +344,7 @@ public class StepImpl {
                 waitBySecond(3);
                 swipeMethod();
                 waitBySecond(3);
-                swipeMethod(); //   ---> Localde burası 3 adet swipeMethod yeterli ama testinium.io 4 tane olması gerekiyor.
+                swipeMethod();
                 waitBySecond(5);
 
                 findElement(By.xpath("//*[@text='" + dayToBeSelected + "']")).click();
@@ -286,49 +354,6 @@ public class StepImpl {
             }
         }
     }
-    @Step({"Find element by <key> and send keys <text> email"})
-    public void searhAirportInputsendKeysByKeyNotClearEmail(String key, String text) {
-
-        MobileElement me = findElementByKey(key);
-        me.clear();
-        for (int i = 0; i < text.length(); i++) {
-
-            char c = text.charAt(i);
-            me.sendKeys(String.valueOf(c));
-            //new TouchAction(appiumDriver).tap(point(me.getLocation().getX(), 230)).perform();
-            clickByKey("contactInformationPhoneNumber");
-        }
-        System.out.println("'" + text + "' written to '" + key + "' element.");
-    }
-
-    @Step({"Find element by <key> and send keys <text> phone"})
-    public void searhAirportInputsendKeysByKeyNotClearPhone(String key, String text) {
-
-        MobileElement _me = findElementByKey(key);
-        _me.clear();
-        for (int i = 0; i < text.length(); i++) {
-
-            char c = text.charAt(i);
-            _me.sendKeys(String.valueOf(c));
-            new TouchAction(appiumDriver).tap(point(_me.getLocation().getX(), 225)).perform();
-        }
-        System.out.println("'" + text + "' written to '" + key + "' element.");
-    }
-
-    @Step({"<key> li elementi bul ve değerini <saveKey> olarak sakla",
-            "Find element by <key> and save text <saveKey>"})
-    public void saveTextByKey(String key, String saveKey) {
-
-        StoreHelper.INSTANCE.saveValue(saveKey, findElementByKey(key).getText());
-    }
-
-    @Step({"<key> li elementi bul ve değerini <saveKey> saklanan değer ile karşılaştır",
-            "Find element by <key> and compare saved key <saveKey>"})
-    public void equalsSaveTextByKey(String key, String saveKey) {
-
-        Assert.assertEquals(StoreHelper.INSTANCE.getValue(saveKey), findElementByKey(key).getText());
-    }
-
     @Step({"<key> li elementi bul", "Find element by <key>"})
     public MobileElement findElementByKey(String key) {
 
@@ -343,92 +368,12 @@ public class StepImpl {
         SelectorInfo selectorInfo = selector.getSelectorInfo(key);
         return findElements(selectorInfo.getBy());
     }
-
     @Step({"Değeri <text> e eşit olan elementli bul ve tıkla",
             "Find element text equals <text> and click"})
     public void clickByText(String text) {
 
         findElement(By.xpath(".//*[contains(@text,'" + text + "')]")).click();
     }
-
-    @Step({"İçeriği <value> e eşit olan elementli bul ve tıkla",
-            "Find element value equals <value> and click"})
-    public void clickByValue(String value) {
-
-        findElement(MobileBy.xpath(".//*[contains(@value,'" + value + "')]")).click();
-    }
-
-    @Step({"<key> li ve değeri <text> e eşit olan elementli bul ve tıkla",
-            "Find element by <key> text equals <text> and click"})
-    public void clickByIdWithContains(String key, String text) {
-
-        List<MobileElement> elements = findElemenstByKey(key);
-        for (MobileElement element : elements) {
-
-            System.out.print("Text !!!" + element.getText());
-            if (element.getText().toLowerCase().contains(text.toLowerCase())) {
-
-                element.click();
-                break;
-            }
-        }
-    }
-
-    @Step({"<key> li ve değeri <text> e eşit olan elementli bulana kadar swipe et ve tıkla", "Find element by <key> text equals <text> swipe and click"})
-    public void clickByKeyWithSwipe(String key, String text) {
-
-        boolean find = false;
-        int maxRetryCount = 10;
-        while (!find && maxRetryCount > 0) {
-            List<MobileElement> elements = findElemenstByKey(key);
-
-            for (MobileElement element : elements) {
-                if (element.getText().contains(text)) {
-                    // element.click();
-                    find = true;
-                    break;
-                }
-            }
-            if (!find) {
-                maxRetryCount--;
-
-                if (appiumDriver instanceof AndroidDriver) {
-                    swipeUpAccordingToPhoneSize();
-                }
-                else {
-                    swipeDownAccordingToPhoneSize();
-                }
-            }
-        }
-    }
-
-    @Step({"<key> li elementi bulana kadar swipe et ve tıkla", "Find element by <key>  swipe and click"})
-    public void clickByKeyWithSwipe(String key) {
-
-        int maxRetryCount = 10;
-        while (maxRetryCount > 0) {
-            List<MobileElement> elements = findElemenstByKey(key);
-
-            if (elements.size() > 0) {
-                if (elements.get(0).isDisplayed() == false) {
-
-                    maxRetryCount--;
-                    swipeMethod();
-                }
-                else {
-                    elements.get(0).click();
-                    System.out.println(key + " elementine tıklandı");
-                    break;
-                }
-            }
-            else {
-                maxRetryCount--;
-                swipeMethod();
-            }
-
-        }
-    }
-
     private int getScreenWidth() {
         return appiumDriver.manage().window().getSize().width;
     }
@@ -547,17 +492,6 @@ public class StepImpl {
     }
 
 
-    @Step({"Hide keyboard with Next Button"})
-    public void hideKeyboardWithNextButton() {
-
-        findElement(MobileBy.xpath("//XCUIElementTypeButton[@name=\"Next:\"]")).click();
-    }
-
-    @Step({"Hide keyboard with Done Button"})
-    public void hideKeyboardWithDoneButton() {
-
-        findElement(MobileBy.xpath("//XCUIElementTypeButton[@name=\"Done\"]")).click();
-    }
 
     @Step("swipe et")
     public void swipeMethod() {
@@ -604,83 +538,28 @@ public class StepImpl {
         System.out.println(appiumDriver.getCapabilities().getCapability("deviceModel").toString());
     }
 
-
-    @Step("Click Done button to close keyboard")
-    public void clickDoneButton() {
-
-        appiumDriver.findElement(MobileBy.AccessibilityId("Done")).click();
-    }
-
-
-
-    @Step("Device name")
-    public void deviceName(){
-
-        System.out.println(appiumDriver.getCapabilities().getCapability("deviceName").toString());
-        System.out.println(appiumDriver.getCapabilities().getCapability("platformVersion").toString());
-        System.out.println(appiumDriver.getCapabilities().getCapability("deviceModel").toString());
-    }
-
-    @Step("close keyboard")
-    public void closeKeyboard() {
-
-        System.out.println(
-                " // BROWSERNAME: " + appiumDriver.getCapabilities().getCapability("deviceName").toString()
-                        + " //");
-        if (appiumDriver.getCapabilities().getCapability("deviceName").toString().contains("ce03171359aa84720c") ||
-                appiumDriver.getCapabilities().getCapability("deviceName").toString().contains("fe64e409")) {
-
-            System.out.println("Method (close keyboard) cihaz GALAXY_S8_PLUS(ce03171359aa84720c) için çalıştırılmıyor.");
-            System.out.println("Method (close keyboard) cihaz Galaxy A7 (fe64e409) için çalıştırılmıyor.");
-        }
-        else{
-            appiumDriver.hideKeyboard();
-            System.out.println("keyboard closed");
-        }
-    }
-    public String ReadCellData(int vRow, int vColumn)
-    {
+    public String exceldenOku(int vRow, int vColumn, int SheetNumber) throws IOException {
         Workbook workbook=null;
-        try
-        {
-            FileInputStream fis=new FileInputStream("C:\\Users\\testinium\\Desktop\\PgsProjectOdev\\src\\test\\resources\\excel\\odevTHY.xlsx");
-            workbook=new XSSFWorkbook(fis);
+        try{
+            FileInputStream fis = new FileInputStream("C:\\Users\\testinium\\Desktop\\PgsProjectOdev\\src\\test\\resources\\excel\\odevTHY.xlsx");
+            workbook = new XSSFWorkbook(fis);
         }
-        catch(FileNotFoundException e)
-        {
-            e.printStackTrace();
+        catch (FileNotFoundException e) {
+            System.out.println("Dosya Bulunamadı");
         }
-        catch(IOException e1)
-        {
-            e1.printStackTrace();
+        catch (IOException e) {
+            System.out.println("Dosya açılırken bir sorun ile karşılaşıldı");
         }
-        Sheet sheet=workbook.getSheetAt(1);
-        System.out.println(sheet);
+        Sheet sheet=workbook.getSheetAt(SheetNumber);
         DataFormatter formatter = new DataFormatter();
         Cell cell = sheet.getRow(vRow).getCell(vColumn);
-        String j_username = formatter.formatCellValue(cell);
-        return j_username;
+        String telefon_nodondur= formatter.formatCellValue(cell);
+        return telefon_nodondur;
     }
-    @Step("<key> <dosya> dan girilir")
-    public void sendkeytoExcel(String key,int col) {
+    @Step(" <key> Alanına : <SheetNumber> numaralı sheet'den <row> satırından , <col> kolonundandan bilgi girilir.")
+    public void sendkeytoExcel(String key,int SheetNumber,int row,int col) throws IOException {
         MobileElement element = findElementByKey(key);
-        System.out.println("asdadsadsaıdsıjadıjsjaıjdıas");
-        System.out.println(ReadCellData(1,1));
-      element.sendKeys(ReadCellData(1, 1));
+      element.sendKeys(exceldenOku(row, col,SheetNumber));
     }
-    @Step({"<key> li elementi bul ve değerini <saveKey> olarak sakla1",
-            "Find element by <key> and save text <saveKey>"})
-    public void savethePriceKey(String key, String saveKey) throws InterruptedException {
-        Thread.sleep(1000);
-        StoreHelper.INSTANCE.saveValue(saveKey, findElementByKey(key).getText());
-        Thread.sleep(2000);
-        System.out.println(saveKey);
-    }
-    @Step({"<key> li elementi bul ve değerini <saveKey> saklanan değer ile karşılaştır ve değişiklik oldugunu dogrula1",
-            "Find element by <key> and compare saved key <saveKey>"})
-    public void equalsSaveTextByKeyNotequal(String key, String saveKey) {
-        appiumDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        Assert.assertNotEquals(StoreHelper.INSTANCE.getValue(saveKey), findElementByKey(key).getText());
-        System.out.println(saveKey);
-    }
+
 }

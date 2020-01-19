@@ -8,7 +8,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 ErkanTest
 ----------------
 
-* Wait "5" seconds
+* Login Kontrolü
 * Click element by "biletAl"
 * Click element by "tekYon"
 * Select and write the from road
@@ -21,17 +21,22 @@ ErkanTest
 * Click element by "firstFlight"
 * Select economy flight
 * Click element by "devamButonu"
+* Mevcut kişi sayısını kontrol et
 * Click element by "addFirstPassenger"
-Complete user fields
-* Click element by "ikinciYolcuSec"
-* Click element by "ikinciYolcuEkle"
-Complete user fields
+* Add First Passenger
+* Click element by "yolcuPencereKapat"
+* Click element by "ikinciYetiskin"
+* Click element by "addFirstPassenger"
+* Add Second Passenger
 * Click element by "YolcuDevamEt"
-Complete Contact Informations
-* Click element by "koltukUcusuSec"
-Payment Page
-
-
-ErkanASDADSADSADSA
--------------
-* Wait "5" seconds
+* Click element by "ulkeKodusec"
+* Click element by "tr90"
+* Find element by "numaraAlani" and send keys "5458814686"
+* Find element text equals "Devam" and click
+* Click element by "ekKoltuk"
+* Koltuk seçimi ilk yolcu gidiş
+* Koltuk seçimi ikinci yolcu gidiş
+* Click element by "hesapOzetiDevam"
+* Click element by "hesapOzetiDevam"
+* Click element by "hesapOzetiDevam"
+* Payment Page
